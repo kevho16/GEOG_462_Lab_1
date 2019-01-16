@@ -1,0 +1,78 @@
+---
+title: "Getting Started with R"
+author: "kevho16"
+date: "January 14, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Sample text large
+### Sample text small
+#### Sample text smaller
+
+This is *kevho16's* first assignment for **GEOG458**. Our course page can be accessed [here](https://canvas.uw.edu/courses/1269928).
+
+![Here is where I study](https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/98/2014/09/07214435/Signature_Stacked_Purple_Hex.png)
+
+ This is the mass-energy equivalence equation: $$E = mc^{2}$$
+ 
+ # of hours slept | energy levels
+ ---------------- | -------------
+        0         |       0
+        2         |       0
+        4         |       0
+        8         |       0
+Data from: [flickr](https://www.flickr.com/photos/dan_dancrazzy/35036077102/)
+
+
+
+```{r}
+100/10+2
+100/(10+2)
+10^2+10/10-10
+70000*(1.03)^5
+sqrt(-16+0i)
+
+```
+
+```{r}
+x <- 8*3
+x + 10
+
+y <- 15*25
+z <- (20000*.03)/365
+
+x + (-24)
+y*52*4
+z*60
+
+```
+
+```{r}
+(sequence1 <- seq(1,30))
+(characterVector <- c("Vancouver","Seattle","Portland"))
+
+length(sequence1)
+length(characterVector)
+
+sum(sequence1)
+
+```
+
+```{r}
+(vector1 <- seq(1,5))
+(vector2 <- seq(from = 6, to = 10))
+
+vector1 + vector2
+
+(vector3 <- vector1*vector2)
+
+(vector4 <- c(vector1,vector2))
+
+(vector5 <- rbind(vector1,vector2,vector3))
+
+(df <- data.frame(vector5))
+```
